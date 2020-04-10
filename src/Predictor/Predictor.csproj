@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <LangVersion>latest</LangVersion>
+        <OutputType>Library</OutputType>
+    </PropertyGroup>
+
+    <ItemGroup Label="Nuget References">
+        <PackageReference Include="MediatR" Version="8.0.1" />
+        <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.0" />
+        <PackageReference Include="murmurhash" Version="1.0.3" />
+        <PackageReference Include="OneOf" Version="2.1.151" />
+        <PackageReference Include="Serilog" Version="2.9.0" />
+        <PackageReference Include="SerilogTimings" Version="2.3.0" />
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,13 @@
+.idea
+
+extensions/*/bin/
+extensions/*/obj/
+
+src/*/bin/
+src/*/obj/
+test/*/bin/
+test/*/obj/
+
+/src/Predictor.Api/appsettings.local.json
+
+*.blob

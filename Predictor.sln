@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Predictor.Api", "src\Predictor.Api\Predictor.Api.csproj", "{53AD487C-066C-426E-B4D4-162197562E25}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{933AEC89-8BF0-41E1-8767-293EC21AC641}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{4ED4480C-8A71-4336-AFB3-BE747E657AA6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{62F6E576-DEB0-4984-8EA1-1CD1D73315EF}"
+ProjectSection(SolutionItems) = preProject
+	.gitignore = .gitignore
+EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "extensions", "extensions", "{48302C67-225F-4439-83A1-F68407473004}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyInjection", "extensions\DependencyInjection\DependencyInjection.csproj", "{4AC9D880-5BF5-427B-8D86-426B94CF1EE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Predictor", "src\Predictor\Predictor.csproj", "{1FA187D8-31CC-4168-AF9B-0C103180FD3C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53AD487C-066C-426E-B4D4-162197562E25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53AD487C-066C-426E-B4D4-162197562E25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53AD487C-066C-426E-B4D4-162197562E25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53AD487C-066C-426E-B4D4-162197562E25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AC9D880-5BF5-427B-8D86-426B94CF1EE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AC9D880-5BF5-427B-8D86-426B94CF1EE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AC9D880-5BF5-427B-8D86-426B94CF1EE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AC9D880-5BF5-427B-8D86-426B94CF1EE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FA187D8-31CC-4168-AF9B-0C103180FD3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FA187D8-31CC-4168-AF9B-0C103180FD3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FA187D8-31CC-4168-AF9B-0C103180FD3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FA187D8-31CC-4168-AF9B-0C103180FD3C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{53AD487C-066C-426E-B4D4-162197562E25} = {933AEC89-8BF0-41E1-8767-293EC21AC641}
+		{4AC9D880-5BF5-427B-8D86-426B94CF1EE5} = {48302C67-225F-4439-83A1-F68407473004}
+		{1FA187D8-31CC-4168-AF9B-0C103180FD3C} = {933AEC89-8BF0-41E1-8767-293EC21AC641}
+	EndGlobalSection
+EndGlobal
