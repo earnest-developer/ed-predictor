@@ -1,6 +1,6 @@
 {
   "ipcMode": null,
-  "executionRoleArn": "arn:aws:iam::580731640327:role/ed-predictor-api-execution-role",
+  "executionRoleArn": "",
   "containerDefinitions": [
     {
       "dnsSearchDomains": null,
