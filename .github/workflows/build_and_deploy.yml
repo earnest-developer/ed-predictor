@@ -32,6 +32,7 @@ jobs: # A workflow run is made up of one or more jobs that can run sequentially 
       run: |
         docker build -f ./src/Predictor.Api/Dockerfile -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
         docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+        echo "::set-output name=image::$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
 
     - name: Render Amazon ECS task definition
       id: render-web-container
