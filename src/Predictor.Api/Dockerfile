@@ -11,6 +11,7 @@ RUN dotnet restore Predictor.Api/Predictor.Api.csproj
 
 # copy everything else and build
 COPY ./src/ ./
+COPY ./extensions/ ./
 WORKDIR /Predictor.Api/
 RUN dotnet publish -c $BUILDCONFIG -o out /p:Version=$VERSION
 
