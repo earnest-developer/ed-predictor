@@ -24,7 +24,6 @@ jobs: # A workflow run is made up of one or more jobs that can run sequentially 
         ECR_REPOSITORY: ed-predictor-api-repo
         IMAGE_TAG: ${{ github.sha }}
       run: |
-        pwd
-        ls
+        ls -a
         docker build -f ./src/Predictor.Api/Dockerfile -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
         docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
