@@ -9,6 +9,8 @@ jobs: # A workflow run is made up of one or more jobs that can run sequentially 
   docker-push-ecr: # This workflow contains a single job called "build"
     runs-on: ubuntu-18.04 # The type of runner that the job will run on
     steps: # Steps represent a sequence of tasks that will be executed as part of the job
+    - name: Checkout repository files
+      uses: actions/checkout@v2
     - name: Configure AWS Credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:
@@ -26,4 +28,3 @@ jobs: # A workflow run is made up of one or more jobs that can run sequentially 
       run: |
         docker build -f ./src/Predictor.Api/Dockerfile -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
         docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
-      working-directory: .
