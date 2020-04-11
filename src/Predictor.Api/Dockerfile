@@ -6,7 +6,6 @@ ARG VERSION=1.0.0
 # copy csproj and restore as distinct layers
 COPY ./src/Predictor.Api/Predictor.Api.csproj ./Predictor.Api/
 COPY ./src/Predictor/Predictor.csproj ./Predictor/
-COPY ./nuget.config ./
 RUN dotnet restore Predictor.Api/Predictor.Api.csproj
 
 # copy everything else and build
