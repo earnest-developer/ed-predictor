@@ -5,8 +5,11 @@ on:
     branches: [ master ] # On pushes made to master
 
 jobs: # A workflow run is made up of one or more jobs that can run sequentially or in parallel
+
   deploy: # This workflow contains a single job called "build"
+
     runs-on: ubuntu-18.04 # The type of runner that the job will run on
+
     steps: # Steps represent a sequence of tasks that will be executed as part of the job
 
     - name: Checkout repository files
@@ -47,4 +50,4 @@ jobs: # A workflow run is made up of one or more jobs that can run sequentially 
       with:
         task-definition: ${{ steps.render-web-container.outputs.task-definition }}
         service: ed-predictor-api-service
-        cluster: ed-predictor-ecs-cluster
+        cluster: ed-sports-predictions-cluster
